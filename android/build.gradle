@@ -30,6 +30,11 @@ android {
     lintOptions {
         disable 'InvalidPackage'
     }
+
+    if (project.android.hasProperty('namespace')) {
+        namespace 'fr.g123k.flutterappbadge.flutterappbadger'
+    }
+
     dependencies {
         // compile 'net.sourceforge.streamsupport:android-retrofuture:1.7.2'
         implementation 'net.sourceforge.streamsupport:android-retrofuture:1.7.4'
